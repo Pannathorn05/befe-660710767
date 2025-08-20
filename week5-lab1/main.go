@@ -11,7 +11,7 @@ type User struct{
 func main()  {
 	r := gin.Default()
 
-	r.GET("/users" , func (c*gin.Context)  {
+	r.GET("/users" , func (c *gin.Context)  {
 		user:=[]User{{ID:"1", Name:"Pannathorn"}}
 		c.JSON(200, user)
 	})
