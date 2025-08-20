@@ -9,7 +9,7 @@ type User struct {
 	Name string `json:"name"`
 }
 
-func getUsers(c*gin.Context)  {
+func getUsers(c *gin.Context)  {
 	user:=[]User{{ID:"1", Name:"Pannathorn"}}
 
 	c.JSON(200, user)
